@@ -1,0 +1,14 @@
+﻿@inject ExampleJsInterop prompt
+
+<QuickGrid Items="@TodoItems.AsQueryable()">
+    <TemplateColumn Title="Finished" Class="text-center">
+        <input type="checkbox" checked="@context.Finished" @onchange="value => { context.Finished = (bool)value.Value!; return UpdateAsync(context); }" />
+    </TemplateColumn>
+    <PropertyColumn Property="@(p => p.CreationDate)" Sortable="true" Format="d MMM yyyy HH:mm"/>
+    <TemplateColumn Title="Text">
+        <textarea value="@context.Text" @onchange="value => { context.Text = value.Value!.ToString()!; return UpdateAsync(context); }" />
+    </TemplateColumn>
+    <TemplateColumn Title="Archive" Class="text-center">
+        <a @onclick="@(async () => { context.Archived = true; await UpdateAsync(context); await prompt.Prompt("The todo item was deleted"); })"><i class="oi oi-trash"></i></a>
+    </TemplateColumn>
+</QuickGrid>

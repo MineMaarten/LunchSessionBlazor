@@ -1,0 +1,1 @@
+dotnet watch run --project LunchSessionBlazor.UI.BlazorServer/LunchSessionBlazor.UI.BlazorServer.csproj

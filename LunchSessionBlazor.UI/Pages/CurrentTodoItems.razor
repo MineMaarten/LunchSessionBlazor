@@ -1,0 +1,5 @@
+﻿@page "/currentTodos"
+
+<h3>Current todo's</h3>
+<TodoTable TodoItems="todoItems" TodoItemUpdated="RefreshTodoItemsAsync" />
+<button class="btn btn-primary mt-3" @onclick="CreateNewTodoItemAsync">Create new</button>

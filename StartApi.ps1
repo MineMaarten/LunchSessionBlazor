@@ -1,0 +1,1 @@
+dotnet watch run --project LunchSessionBlazor.Api/LunchSessionBlazor.Api.csproj --urls "http://localhost:5100;https://localhost:5101"
