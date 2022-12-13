@@ -12,6 +12,7 @@ namespace LunchSessionBlazor.UI.Pages
         [Inject] private TodoService TodoService { get; set; } = null!;
 
         private List<TodoItem> todoItems = new();
+        private bool showAdditionalInfo = true;
 
         protected override async Task OnInitializedAsync()
         {

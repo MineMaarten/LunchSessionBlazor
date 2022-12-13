@@ -3,3 +3,32 @@
 <h3>Current todo's</h3>
 <TodoTable TodoItems="todoItems" TodoItemUpdated="RefreshTodoItemsAsync" />
 <button class="btn btn-primary mt-3" @onclick="CreateNewTodoItemAsync">Create new</button>
+
+<div class="mt-3">
+    <input type="checkbox" @bind="showAdditionalInfo" /> Show additional info
+</div>
+
+@if (showAdditionalInfo)
+{
+    <AdditionalInfo SearchedWord="market" TodoItems="todoItems">
+        The market days are <b>wednesdays</b> and <b>saturdays</b>
+    </AdditionalInfo>
+    <AdditionalInfo SearchedWord="garden" TodoItems="todoItems">
+        Tomorrow it will rain!
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Hour</th>
+                <th>Rain intensity (mm/h)</th>
+            </tr>
+            </thead>
+            @for (var i = 0; i < 24; i++)
+            {
+                <tr>
+                    <td>@i:00</td>
+                    <td>@Math.Max(0, 10 - Math.Pow(i - 12, 2)) mm/h</td>
+                </tr>
+            }
+        </table>
+    </AdditionalInfo>
+}

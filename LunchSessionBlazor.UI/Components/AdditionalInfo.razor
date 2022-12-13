@@ -1,0 +1,8 @@
+﻿@if (TodoItems.Any(x => x.Text.Contains(SearchedWord, StringComparison.OrdinalIgnoreCase)))
+{
+    <div class="card mt-3">
+        <div class="card-body">
+            @ChildContent
+        </div>
+    </div>
+}

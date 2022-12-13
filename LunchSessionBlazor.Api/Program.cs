@@ -11,7 +11,8 @@ builder.Services.AddDbContextFactory<TodoDbContext>(options =>
 {
     // When in release mode (usually in Azure) use the SQL Server db in Azure.
 #if RELEASE
-
+    var connectionString = builder.Configuration["SqlConnectionString"] ?? throw new InvalidOperationException($"No 'SqlConnectionString' configuration provided");
+    options.UseSqlServer(connectionString);
 #else
     // When not in release mode (developing locally) use a sqlite db
     var dbPath = "todoDb.db";

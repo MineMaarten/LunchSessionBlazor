@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LunchSessionBlazor.UI", "Lu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LunchSessionBlazor.UI.BlazorServer", "LunchSessionBlazor.UI.BlazorServer\LunchSessionBlazor.UI.BlazorServer.csproj", "{21363BF4-304A-4675-A384-6DB5563251CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchSessionBlazor.Api", "LunchSessionBlazor.Api\LunchSessionBlazor.Api.csproj", "{7E249603-5251-4CDA-98FD-EF595AB4A16A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LunchSessionBlazor.Api", "LunchSessionBlazor.Api\LunchSessionBlazor.Api.csproj", "{7E249603-5251-4CDA-98FD-EF595AB4A16A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchSessionBlazor", "LunchSessionBlazor\LunchSessionBlazor.csproj", "{7B4BCF63-9F35-4DA4-B3D2-1E97B5B703DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LunchSessionBlazor", "LunchSessionBlazor\LunchSessionBlazor.csproj", "{7B4BCF63-9F35-4DA4-B3D2-1E97B5B703DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchSessionBlazor.UI.BlazorWebAssembly", "LunchSessionBlazor.UI.BlazorWebAssembly\LunchSessionBlazor.UI.BlazorWebAssembly.csproj", "{B77F4CD8-31D0-48AA-A1B5-0E5F7F8D3418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LunchSessionBlazor.UI.BlazorWebAssembly", "LunchSessionBlazor.UI.BlazorWebAssembly\LunchSessionBlazor.UI.BlazorWebAssembly.csproj", "{B77F4CD8-31D0-48AA-A1B5-0E5F7F8D3418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchSessionBlazor.UI.Maui", "LunchSessionBlazor.UI.Maui\LunchSessionBlazor.UI.Maui.csproj", "{4F6B95F5-0687-4F68-A3E3-3AA990229FE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LunchSessionBlazor.UI.Maui", "LunchSessionBlazor.UI.Maui\LunchSessionBlazor.UI.Maui.csproj", "{4F6B95F5-0687-4F68-A3E3-3AA990229FE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
